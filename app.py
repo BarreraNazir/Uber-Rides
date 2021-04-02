@@ -5,7 +5,7 @@ import math
 from sklearn.linear_model import LinearRegression
 
 app = Flask(__name__)
-model = pickle.load(open('taxi.pkl','rb'))
+model = pickle.load(open('taxi.pkl',"rb"))
 
 @app.route('/')
 def home():
